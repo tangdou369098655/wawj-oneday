@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        #container{
+            float: left;
+            width:1400px;
+            margin: 0 auto;
+        }
+    ul{
+        float: left;
+        list-style: none;
+        text-align: center;
+        width:100%;
+        margin:0 auto;
+        position: relative;
+        overflow: hidden;
+        top:50%;left:8%;
+    }
+    ul>li{
+        float: left;
+        margin:10px;
+        text-align: center;
+    }
+    ul>li>a{
+        display: block;
+        width:300px;
+        height:300px;
+    }
+    ul>li>a>img{
+        width:300px;
+    }
+
+    #nextPage{
+        display:flex;
+        justify-content:center;
+        position: relative;
+        left:18%;top:14px;
+        border:1px solid #000;
+        width:65px;
+        height:35px;
+        line-height: 35px;
+        font-size:22px;
+        transition: .4s
+    }
+    #nextPage:hover{
+        background: #000;
+        color:#fff;
+        cursor: pointer;
+    }
+    .img_box{
+        margin:0 auto;
+        opacity:0.8;
+    }
+    .img_box {
+        position:absolute;
+
+        
+    }
+    .img_a{
+        display:inline-block;
+        position: relative;
+        overflow: hidden;
+    }
+    .img_a:hover>.intr_box{
+        opacity:1;
+    }
+    .img_a:hover>.bg_box{
+        opacity:1;
+    }
+    .intr_box{
+        z-index: 99;
+        color:#fff;
+        font-size:22px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        opacity:0;
+        transform:translate(-50%,-50%);
+        transition:all 0.1s linear;
+    }
+.bg_box{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgba(111,73,0,0.6);
+    opacity:0;
+    transition:all 0.1s linear;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul>
+                <li class="wow bounceInUp bg-red" data-wow-delay="0.1s">
+                    <a href="#" class="img_a">
+                        <div class="img_box">
+                            <img src="images/22.jpg" alt=""> 
+                        </div>
+                        <div class="bg_box"></div>
+                        <div class="intr_box">
+                            <p>{{台灯样式}}</p>
+                        </div> 
+                    </a>
+                </li>
+                <li class="wow bounceInUp bg-red" data-wow-delay="0.1s">
+                    <a href="#" class="img_a">
+                        <div class="img_box">
+                            <img src="images/28.jpg" alt=""> 
+                        </div>
+                        <div class="bg_box"></div>
+                        <div class="intr_box">
+                            <p>{{台灯样式}}</p>
+                        </div> 
+                    </a>
+                </li>
+                <li  class="wow bounceInUp bg-red" data-wow-delay="0.1s">
+                    <a href="#" class="img_a">
+                        <div class="img_box">
+                            <img src="images/24.jpg" alt=""> 
+                        </div>
+                        <div class="bg_box"></div>
+                        <div class="intr_box">
+                            <p>{{台灯样式}}</p>
+                        </div> 
+                    </a>
+                </li>
+                <li class="wow bounceInUp bg-red" data-wow-delay="0.1s">
+                    <a href="#" class="img_a">
+                        <div class="img_box">
+                            <img src="images/19.jpg" alt=""> 
+                        </div>
+                        <div class="bg_box"></div>
+                        <div class="intr_box">
+                            <p>{{台灯样式}}</p>
+                        </div> 
+                    </a>
+                </li>
+                <li class="wow bounceInUp bg-red" data-wow-delay="0.1s">
+                    <a href="#" class="img_a">
+                        <div class="img_box">
+                            <img src="images/27.jpg" alt=""> 
+                        </div>
+                        <div class="bg_box"></div>
+                        <div class="intr_box">
+                            <p>{{台灯样式}}</p>
+                        </div> 
+                    </a>
+                </li>
+                <li class="wow bounceInUp bg-red" data-wow-delay="0.1s">
+                    <a href="#" class="img_a">
+                        <div class="img_box">
+                            <img src="images/25.jpg" alt=""> 
+                        </div>
+                        <div class="bg_box"></div>
+                        <div class="intr_box">
+                            <p>{{台灯样式}}</p>
+                        </div> 
+                    </a>
+                </li>
+                <li class="wow bounceInUp bg-red" data-wow-delay="0.1s">
+                    <a href="#" class="img_a">
+                        <div class="img_box">
+                            <img src="images/21.jpg" alt=""> 
+                        </div>
+                        <div class="bg_box"></div>
+                        <div class="intr_box">
+                            <p>{{台灯样式}}</p>
+                        </div> 
+                    </a>
+                </li>
+                <li class="wow bounceInUp bg-red" data-wow-delay="0.1s">
+                    <a href="#" class="img_a">
+                        <div class="img_box">
+                            <img src="images/26.jpg" alt=""> 
+                        </div>
+                        <div class="bg_box"></div>
+                        <div class="intr_box">
+                            <p>{{台灯样式}}</p>
+                        </div> 
+                    </a>
+                </li>
+        </ul>
+        <br>
+ 
+         <a id="nextPage" class="wow bounceInLeft bg-blue"> &gt; </a>
+
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/wow.js"></script>
+         <script>
+                if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+                  new WOW().init();
+                };
+              </script>
+</body>
+</html>

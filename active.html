@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{margin:0;padding:0;box-sizing: border-box;}
+    a{text-decoration: none;}
+    li{list-style:none;}
+    /* 总框架 */
+    .zong-container{
+        width:1220px;
+        height:962px;
+        margin:0 auto;
+    }
+    /* 最上面标题 */
+    .topfont{
+        width:261px;
+        color:#666;
+        font-size:16px;
+        margin:24px 8px;
+    }
+    /* 标题下四张图片*/
+    .fourimg{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .fourimgdd{
+        width:600px;
+    }
+    /* 四张图片下第一排文字 */
+    .fourimgdd>p>a{
+        color:#4a4a4a;
+        font-size:16px;
+        font-weight: bold;        
+        display:inline-block;
+    }
+    /* 四张图片下第二排文字 */
+    .fourimgdd>p{
+        color:#666;
+        font-size:14px;
+        margin:16px 0;
+    }
+    /* 四张图片下一条线 */
+    .imgxian{
+        display:inline-block;
+        margin:16px 0;
+        width:580px;
+        color:#eee;
+    }
+    /* 图片下面的btn */
+    .onebtn{
+        display:inline-block;
+        width:65px;
+        height:35px;
+        border:1px solid #111;
+        line-height:35px;
+        text-align: center;
+        font-size:16px;
+        margin:24px 0;
+        position: relative;
+        animation:leftm 1s 1;
+    }
+    .onebtn:hover{
+      background-color:#111;
+      color:#eee;
+    }
+    /* 左边动画 */
+    .left{
+      position: relative;
+      animation:leftm 1s 1;
+    }
+    @keyframes leftm{
+      0%{transform:translate(-300px,0px);}
+      100%{transform:translate(0px,0px);}
+    }
+    /* 右边动画 */
+    .right{
+      position: relative;
+      animation:rightm 1s 1;
+    }
+    @keyframes rightm{
+      0%{transform:translate(300px,0px);}
+      100%{transform:translate(0px,0px);}
+    }
+    </style>
+</head>
+<body>
+    <!-- 总框架 -->
+    <div class="zong-container">
+        <!--上面标题-->
+        <p class="topfont">行业资讯&nbsp;&nbsp;公司新闻</p>
+        <!--标题下四张图片-->
+        <div class="fourimg">
+            <!--第一张图-->
+            <div class="fourimgdd left">
+              <a href="#"><img src="images/1.jpg" alt="#"></a>
+              <p>
+                <a href="#">家居电商首部送装标准将出台 树立行业服务标杆</a>
+              </p>
+              <p>2018年5月24日，《家居电商送货与安装服务标准》专家终审会在京东集团举行，由住建部、国标委、环保部环境认证中心......</p>  
+              <hr class="imgxian">
+            </div>
+            <!--第二张图-->
+            <div class="fourimgdd right">
+              <a href="#"><img src="images/2.jpg" alt="#"></a>
+              <p>
+                <a href="#">整木家居发展潜力无限 为地板带来了哪些商机</a>
+              </p>
+              <p>整木家装早已不是陌生词汇，与发达国家相比，我国的整木家居似乎只在极少数的家庭中存在。但最近几年，整木家居似乎......</p>  
+              <hr class="imgxian">
+            </div>
+            <!--第三张图-->
+            <div class="fourimgdd left">
+              <a href="#"><img src="images/35.jpg" alt="#"></a>
+              <p>
+                <a href="#">工业4.0五大产业链 打造智能工厂</a>
+              </p>
+              <p>2018年5月24日，《家居电商送货与安装服务标准》专家终审会在京东集团举行，由住建部、国标委、环保部环境认证中心......</p>  
+              <hr class="imgxian">
+            </div>
+            <!--第四张图-->
+            <div class="fourimgdd right">
+              <a href="#"><img src="images/36.jpg" alt="#"></a>
+              <p>
+                <a href="#">整木家居发展潜力无限 为地板带来了哪些商机</a>
+              </p>
+              <p>在智能工厂里，机器和设备将具有提升的自我优化和自主决策的能力。这与今日运行固定程序操作的情况形成了鲜明的对比......</p>  
+              <hr class="imgxian">
+            </div>
+        </div>
+            <!--图片下面的btn-->
+            <div class="zongbtn">
+                <!--第一个btn-->
+                <a href="#" class="onebtn">
+                  1
+                </a>
+                <!--第二个btn-->
+                <a href="#" class="onebtn">
+                  &gt;
+                </a>
+            </div>        
+    </div>
+</body>
+</html>
